@@ -1,0 +1,29 @@
+{
+  "name": "api_games",
+  "version": "1.0.0",
+  "description": "api de juegos para presentar como proyecto en la materia laboratorio IV ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index",
+    "lint": "npx standard",
+    "lint:fix": "npx standard --fix"
+  },
+  "author": "Agustin Antunez",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "querystring": "^0.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "eslint": "^9.35.0",
+    "globals": "^16.4.0",
+    "standard": "^17.1.2"
+  }
+}
