@@ -1,10 +1,10 @@
-const {Router} = require('express')
-const {getGame, getGames} = require('../controllers/games.controller')
+const { Router } = require('express')
+const { getGameID, getGames, getGamesFilter } = require('../controllers/games.controller')
 
 const routes = Router()
 
+routes.get('/filtro', getGamesFilter)
 routes.get('/', getGames)
-routes.get('/:id', getGame);
+routes.get('/:id', getGameID)
 
 module.exports = routes
-

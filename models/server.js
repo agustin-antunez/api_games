@@ -1,6 +1,5 @@
 const express = require('express')
 const cors = require('cors')
-require('dotenv').config();
 
 class Server {
   constructor () {
@@ -17,7 +16,7 @@ class Server {
   }
 
   routes () {
-    this.app.get('/', (req,res)=> res.send('Hello and welcome to this page'))
+    this.app.get('/', (req, res) => res.send('Hello and welcome to this page'))
     this.app.use('/api/v1/games', require('../routes/game.routes'))
   }
 

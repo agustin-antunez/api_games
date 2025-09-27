@@ -8,7 +8,8 @@
     "start": "node index",
     "dev": "nodemon index",
     "lint": "npx standard",
-    "lint:fix": "npx standard --fix"
+    "lint:fix": "npx standard --fix",
+    "prepare": "husky"
   },
   "author": "Agustin Antunez",
   "license": "ISC",
@@ -16,14 +17,14 @@
     "axios": "^1.11.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
-    "express": "^5.1.0",
-    "nodemon": "^3.1.10",
-    "querystring": "^0.2.1"
+    "express": "^5.1.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.35.0",
-    "eslint": "^9.35.0",
-    "globals": "^16.4.0",
+    "husky": "^9.1.7",
+    "nodemon": "^3.1.10",
     "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }
